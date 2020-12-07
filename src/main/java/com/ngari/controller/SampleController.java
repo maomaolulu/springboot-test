@@ -1,3 +1,4 @@
+/*
 package com.ngari.controller;
 
 import org.springframework.beans.factory.annotation.Configurable;
@@ -7,19 +8,23 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+*/
 /**
  * @ClassName SampleController
  * @Description
  * @Author maoLy
  * @Date 2020/12/7
- **/
+ **//*
+
 @Controller
 @EnableAutoConfiguration
 public class SampleController {
 
-    /**10
+    */
+/**10
      * 表示如果访问路径/,返回字符串 Hello World!
-     */
+     *//*
+
     @RequestMapping("/")
     @ResponseBody
     public String home() {
@@ -30,3 +35,4 @@ public class SampleController {
         SpringApplication.run(SampleController.class, args);
     }
 }
+*/
