@@ -22,7 +22,7 @@ public class SampleController {
      */
     @RequestMapping("/")
     @ResponseBody
-    String home() {
+    public String home() {
         return "Hello World!";
     }
     public static void main(String[] args) throws Exception {
