@@ -1,9 +1,9 @@
 package com.ngari;
 
-import com.ngari.config.MyConfiguration;
+import com.ngari.utils.TestProperties;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * @ClassName Application
@@ -12,8 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2020/12/7
  **/
 @SpringBootApplication
-//在自动配置的配置类之前启动自定义的配置类
-@AutoConfigureBefore(value= MyConfiguration.class)
+@EnableConfigurationProperties(value= TestProperties.class)
 public class Application {
 
     public static void main(String[] args) throws Exception {
