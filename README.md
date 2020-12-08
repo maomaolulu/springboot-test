@@ -26,29 +26,3 @@ J2EE开发的一站式解决方案；
 1.实现了各种主流的框架的快速整合
 2.实现了 Spring 的应用的快速部署， 使用 Spring Boot 的 Web 应用可以以 Jar 的方式部署。
 
-1.5. Spring Boot 学习的前提
-
-1.由于 Spring Boot 的最小配置都是基于 SpringMVC 框架的， 所以学习 Spring Boot 先要有 Spring
-和 SpringMVC 框架的基础。
-2.SpringBoot 默认不支持 JSP 视图， 官方推荐使用 Thymeleaf 或者 Freemarker 模板引擎。 本文档
-没有对这两个模板引擎作详细介绍。
-
-Spring Boot 中可以使用 Spring 框架的所有注解。 如果没有学过纯注解 Spring 框架配置， 需要先
-学习 Spring 纯注解的配置。
-所谓的纯注解： 就是一个 Spring 配置文件都没有的配置。
-涉及 Spring 框架的纯注解配置类常用注解如下：
-注解名
-说明
-@Configuration
-声明一个配置类， 配置类的功能等同 spring 的配置文件（重点）
-@Bean
-将没有声明
-@Component/@Controller/@Serivce/@Repository 的类加入到 Spring 容器等同于 Spring 配置文件的<bean>标签
-@PropertySource
-在 Spring 的配置里读取， 增加的这个注解， 可以使用@Value 注解获得 properties 文件的内容
-@Value
-获得上下文中， Properties 文件的内容等同与 Spring 配置文件的${key}
-@ComponentScan
-用于扫描类， 创建对象到 Spring 容器中等同 Spring 配置文件<context:component-scan>
-@ConditionalOnMissingBean
-表示如果 Spring 容器已经有该类的对象就不执行创建对象的方法再创建一次了。
